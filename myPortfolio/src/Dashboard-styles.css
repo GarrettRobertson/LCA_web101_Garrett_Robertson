@@ -8,28 +8,49 @@ html {
     padding: 0;
     box-sizing: inherit;
   }
+  body{ background-image: url(dashboard_background.jpg);}
 main{
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "Calculator Greeting Weather"
     "TO-DO . Clock";
 }
   .weatherwidget-io{
-      Grid-area: Weather
+      Grid-area: Weather;
   }
   .calendar{
-      Grid-area: Clock
+      Grid-area: Clock;
+      background-color: rgba(0, 255, 255, 0.377);
   }
-  .day-of-week{    display: grid;
-    grid-template-columns: repeat(7,1fr);
-}
-
+  .day-of-week,
   .date-grid{
       display: grid;
       grid-template-columns: repeat(7,1fr);
+      font-size: 20px;
+      text-align: center;
+      height: 20%;
+      color: rgb(123, 255, 0);
   }
   .date-grid button:first-child {
     grid-column: 6;
+}
+.month-indicator{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(123, 255, 0);
+}
+.day-of-week{
+    padding-top: 10px;
+}
+.date-grid button:hover{
+    background-color: rgb(123, 255, 0);
+}
+.Greeting{
+    grid-area: Greeting;
+    color: rgb(123, 255, 0);
+    text-align: ;
 }
