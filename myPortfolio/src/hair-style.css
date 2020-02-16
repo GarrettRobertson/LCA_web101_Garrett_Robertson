@@ -1,0 +1,37 @@
+body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    ". . LOGO . ."
+    ". NAV NAV NAV ."
+    "HERO HERO HERO HERO HERO"
+    ". ENIM MAGNA DOLORE ."
+    ". COPYRIGHT . SOCIAL .";
+}
+.LOGO{
+    grid-area: LOGO;
+}
+.NAV{
+    grid-area: NAV;
+}
+.HERO{
+    grid-area: HERO;
+}
+.Enim{
+    grid-area: ENIM;
+}
+.Magna{
+    grid-area: MAGNA;
+}
+.Dolore{
+    grid-area: DOLORE;
+}
+.COPYRIGHT{
+    grid-area: COPYRIGHT;
+}
+.SOCIAL{
+    grid-area: SOCIAL;
+}
