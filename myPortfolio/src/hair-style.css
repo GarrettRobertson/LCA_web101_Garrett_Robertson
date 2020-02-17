@@ -57,13 +57,12 @@ footer{
 }
 footer{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20%;
 }
 .COPYRIGHT{
     grid-column: 1/2;
 }
 .SOCIAL{
-    grid-column: 3/4;
     height: 20PX;
     width: 25PX;
 }
