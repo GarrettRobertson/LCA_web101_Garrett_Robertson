@@ -83,3 +83,24 @@ footer{
     grid-area: d;
     text-align: center;
 }
+@media (max-width : 321px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 20% 20% 20%;
+        grid-template-areas: 
+        "h"
+        "e"
+        "m"
+        "d";
+    }
+    .FLOAT{
+        grid-column: 1/2;
+        grid-row:1/2;
+        padding-top: 0px;
+        color: ivory;
+    }
+    .Enim{
+        margin-bottom: 200px;
+    }
+}
