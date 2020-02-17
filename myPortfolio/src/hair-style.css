@@ -1,0 +1,85 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 200px;
+    grid-template-areas: 
+    'h h h h h'
+    '. e m d .';
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    '. l .'
+    '. n .';
+}
+footer{
+    display: grid;
+    width: 10000px;
+}
+.LOGO{
+    grid-area: l;
+    text-align: center;
+}
+.NAV{
+    grid-area: n;
+    text-align: center;
+}
+.HERO{
+  grid-area: h ;
+  width: 100%;
+  height: auto;
+}
+.Enim{
+    grid-area: e;
+    height: 130px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.Magna{
+    grid-area: m;
+    height: 130px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+.Dolore{
+    grid-area: d;
+    height: 130px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 20%;
+}
+.COPYRIGHT{
+    grid-column: 1/2;
+}
+.SOCIAL{
+    height: 20PX;
+    width: 25PX;
+}
+.FLOAT{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding-top: 100px;
+}
+.ut{
+    grid-area: e;
+    text-align: center;
+}
+.magna{
+    grid-area: m;
+    text-align: center;
+}
+.cillium{
+    grid-area: d;
+    text-align: center;
+}
