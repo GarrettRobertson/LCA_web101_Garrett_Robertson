@@ -9,7 +9,7 @@ html {
     box-sizing: inherit;
   }
   body{ background-image: url(dashboard_background.jpg);}
-main{
+/* main{
     display: grid;
     height: 100%;
     width: 100%;
@@ -18,13 +18,14 @@ main{
     grid-template-areas: 
     "Calculator Greeting Weather"
     "TO-DO . Clock";
-}
+} */
   .weatherwidget-io{
       Grid-area: Weather;
   }
   .calendar{
       Grid-area: Clock;
       background-color: rgba(0, 255, 255, 0.377);
+      width: 100%;
   }
   .day-of-week,
   .date-grid{
@@ -55,6 +56,7 @@ main{
     text-align: center ;
     padding-top: 50%;
     font-size: 80px;
+    width: 100%;
 }
 .calculator {
     border: 1px solid #ccc;
@@ -63,6 +65,7 @@ main{
     left: 50%;
     width: 400px;
     background-color: rgba(0, 255, 255, 0.377);
+    width: 100%;
   }
   .calculator-screen {
     width: 100%;
@@ -135,4 +138,40 @@ main{
   .TO-DO{
       grid-area:TO-DO;
       display: grid;
+      width: 100%;
+  }
+  @media(min-width: 320px){
+    main{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: 
+      "Greeting"
+      "Weather"
+      "TO-DO"
+      "Clock"
+      "Calculator";
+    }
+  }
+  @media(min-width: 768px){
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: 
+      "Calculator Weather"
+      "Greeting Greeting"
+      "TO-DO Clock";
+    }
+  }
+  @media(min-width: 992px){
+    main{
+      display: grid;
+      height: 100%;
+      width: 100%;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      "Calculator Greeting Weather"
+      "TO-DO . Clock";}
   }
