@@ -8,7 +8,7 @@ html {
     padding: 0;
     box-sizing: inherit;
   }
-  body{ background-image: url(dashboard_background.jpg);}
+  body{ background-image: url(/myPortfolio/src/img/dashboard_background.jpg);}
 /* main{
     display: grid;
     height: 100%;
