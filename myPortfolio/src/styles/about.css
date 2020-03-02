@@ -1,0 +1,55 @@
+body{
+    background-image: url(/myPortfolio/src/img/dragons.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:  1fr 3fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    'title . .'
+    '. info .'
+    '. . quote'
+    '. qual .'
+    '. form .';
+}
+.header{
+    text-align: right;
+    font-size: 20px;
+    background-color: gray;
+}
+.title{
+    grid-area: title;
+    color: goldenrod;
+    animation-name: title;
+    animation-duration: 10s;
+}
+@keyframes title{
+    from {color:red;}
+    to {color:goldenrod;}
+}
+.info{
+    grid-area: info;
+    font-size: 25px;
+    color:goldenrod;
+}
+.quote{
+    grid-area: quote;
+    font-size: 15px;
+    color:goldenrod;
+
+}
+.qual{
+    grid-area: qual;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 20px;
+    padding-left: 100px;
+}
+.form{
+    grid-area: form;
+    color: goldenrod;
+    font-size: 20px;
+    padding-left: 90px;
+}
