@@ -42,7 +42,6 @@ main{
 }
 .qual{
     grid-area: qual;
-    font-weight: bold;
     color: goldenrod;
     font-size: 20px;
     padding-left: 100px;
