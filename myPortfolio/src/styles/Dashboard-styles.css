@@ -161,6 +161,15 @@ html {
   li:hover{
     background-color: black;
   }
+  .Geo{
+    grid-area: Geo;
+  }
+  .geoButton{
+    width: 100%;
+    font-size: large;
+    color: rgb(123, 255, 0) ;
+  }
+  
   @media(min-width: 320px){
     main{
       display: grid;
@@ -171,7 +180,8 @@ html {
       "Weather"
       "TO-DO"
       "Clock"
-      "Calculator";
+      "Calculator"
+      "Geo";
     }
   }
   @media(min-width: 768px){
@@ -181,7 +191,7 @@ html {
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: 
       "Calculator Weather"
-      "Greeting Greeting"
+      "Greeting Geo"
       "TO-DO Clock";
     }
   }
@@ -194,5 +204,5 @@ html {
       grid-template-rows: repeat(2, 1fr);
       grid-template-areas: 
       "Calculator Greeting Weather"
-      "TO-DO . Clock";}
+      "TO-DO Geo Clock";}
   }

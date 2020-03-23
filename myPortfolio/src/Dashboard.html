@@ -97,18 +97,23 @@
       
         </div>
       </div>
-      <ul class="TO-DO">
+      <div class="TO-DO">
+        <ul>
           <li class="item">Study</li>
           <li class="item">Work on dashboard</li>
-      </ul>
-    <form id="newItemForm">
-      <input type="text" id="itemField" placeholder="Item" />
-      <input type="submit" id="add" value="add" />
-    </form>
-  </div>
+         </ul>
+        <form id="newItemForm">
+         <input type="text" id="itemField" placeholder="Item" />
+         <input type="submit" id="add" value="add" />
+        </form>
+      </div>
   <script src="/jquery-3.4.1.min.js"></script>
   <script src="./To-do.js"></script>
+      <div class="Geo">
+        <button onclick="getLocation()" class="geoButton">Where Am I?</button>
+        <p id="coordinates"></p>
       </div>
+  <script src="./Geolocation.js"></script>
 </main>
  </body>
  </html>
